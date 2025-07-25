@@ -117,6 +117,87 @@ a {
   width: 77%;
   height: 53px;
 }
+/* card section */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.card {
+  text-align: center;
+}
+.card button {
+  background-color: rgb(233, 90, 8);
+  color: white;
+  border: none;
+  padding: 26px 50px 26px 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card button:hover {
+  background-color: #d35400;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 30px 69px 20px 69px;
+}
+.card p {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* plant lover section */
+.plants-lover-section {
+  gap: 60px;
+  margin-bottom: 130px;
+}
+
+.plants-lover-section-title {
+  font-family: "Noto Serif", serif;
+  color: rgb(0, 0, 0);
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-top: 38px;
+}
+.plants-lover-section-list {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 27px;
+}
+.plants-lover-section-list li {
+  margin: 20px 0px;
+}
+.plants-lover-img {
+  position: relative;
+}
+.trusted-badge {
+  position: absolute;
+  top: -110px;
+  left: 350px;
+  width: 286px;
+  height: 286px;
+}
+
+
+
+
 
 /* responsie */
 
@@ -163,4 +244,45 @@ a {
     margin-bottom: 50px;
     padding-bottom: 80px;
   }
+  .card-container {
+    grid-template-columns: repeat(2, calc((100% - 20px) / 2));
+    gap: 20px;
+    padding-left: 10px;
+  }
+  .card h3 {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .card button {
+    padding: 15px 0px;
+  }
+ .plants-lover-section {
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .flower-store {
+    width: 100%;
+  }
+  .plants-lover-section-title {
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+  }
+  .plants-lover-section-list li {
+    margin: 16px 0px;
+  }
+  .plants-lover-section-list {
+    font-size: 0.875rem;
+    line-height: 17px;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
+
+
 }
