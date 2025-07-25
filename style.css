@@ -89,20 +89,78 @@ a {
   width: 100%;
 }
 
+/* plant section */
+
+.plants-section {
+  margin-bottom: 210px;
+}
+.plants-text {
+  margin-top: 120px;
+  margin-bottom: 49px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.plants-text h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.plants-text p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 77%;
+  height: 53px;
+}
 
 /* responsie */
 
 @media screen and (max-width: 576px){
 
     .container{
-        max-width: 100%;
-        margin: 0px;
-    }
+      max-width: 100%;
+      margin: 0px;
+      }
     .navbar {
-    margin-left: 16px;
-    margin-right: 16px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .nav-ul {
+      display: none;
+    }
+     .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    margin-top: 60px;
   }
-  .nav-ul {
-    display: none;
+  .banner-text {
+    width: 100%;
+    height: auto;
+    margin-top: 28px;
+    padding: 0px 16px 0px 16px;
+  }
+  .banner-title {
+    font-size: 1.75rem;
+    width: 65%;
+  }
+  .banner-para {
+    font-size: 1rem;
+  }
+   .plants-section {
+    margin: 0px 15px 40px 5px;
+  }
+  .plants-text p {
+    width: 100%;
+  }
+  .plants-text {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    padding-bottom: 80px;
   }
 }
